@@ -11,8 +11,8 @@ YouTube ·字幕翻译语言=input,off,tag=YouTube ·字幕翻译语言, desc=Yo
 YouTube ·歌词翻译语言=input,off,tag=YouTube ·歌词翻译语言, desc=YouTube ·歌词翻译语言
 
 [Rule]
-AND,((PROTOCOL,QUIC),(DOMAIN,youtubei.googleapis.com)),REJECT
-AND,((PROTOCOL,QUIC),(DOMAIN-SUFFIX,googlevideo.com)),REJECT
+AND, ((DOMAIN-SUFFIX, googlevideo.com),  (PROTOCOL, QUIC)), REJECT
+AND, ((DOMAIN-SUFFIX, youtubei.googleapis.com),  (PROTOCOL, QUIC)), REJECT
 
 [Rewrite]
 ^https?:\/\/[\w-]+\.googlevideo\.com\/initplayback.+&oad - reject-200
