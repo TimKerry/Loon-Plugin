@@ -1,5 +1,5 @@
 #!name=Talkatone
-
+#!desc=2026-02-05 00:32:12
 [Rule]
 # DOMAIN-KEYWORD,googleads,REJECT
 DOMAIN-SUFFIX,creatives.smadex.com,REJECT
